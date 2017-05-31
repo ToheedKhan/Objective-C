@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91007A581C591C0A00A38373 /* BMWLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 91007A571C591C0A00A38373 /* BMWLocationService.m */; };
+		91007A5A1C59320000A38373 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91007A591C5931FF00A38373 /* MapKit.framework */; };
+		91007A851C59746E00A38373 /* BMWLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91007A841C59746E00A38373 /* BMWLoadingView.m */; };
+		91007A871C59B30400A38373 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91007A861C59B30400A38373 /* CoreLocation.framework */; };
+		91007A891C59C0D000A38373 /* BMWLocationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91007A881C59C0D000A38373 /* BMWLocationViewControllerTests.m */; };
+		91007A8D1C59C94E00A38373 /* locationResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 91007A8B1C59C3D400A38373 /* locationResponse.json */; };
+		9171FBBB1C566F1C00C7C088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FBBA1C566F1C00C7C088 /* main.m */; };
+		9171FBBE1C566F1C00C7C088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FBBD1C566F1C00C7C088 /* AppDelegate.m */; };
+		9171FBC41C566F1C00C7C088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9171FBC21C566F1C00C7C088 /* Main.storyboard */; };
+		9171FBC61C566F1C00C7C088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9171FBC51C566F1C00C7C088 /* Assets.xcassets */; };
+		9171FBC91C566F1C00C7C088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9171FBC71C566F1C00C7C088 /* LaunchScreen.storyboard */; };
+		9171FBDF1C566F1D00C7C088 /* BMWTaskUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FBDE1C566F1D00C7C088 /* BMWTaskUITests.m */; };
+		9171FBF21C56704900C7C088 /* BMWGlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FBF11C56704900C7C088 /* BMWGlobalConstants.m */; };
+		9171FBF81C5670B500C7C088 /* BMWLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FBF71C5670B500C7C088 /* BMWLocation.m */; };
+		9171FBFB1C5670D600C7C088 /* BMWLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FBFA1C5670D600C7C088 /* BMWLocationViewController.m */; };
+		9171FBFF1C56712700C7C088 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FBFE1C56712700C7C088 /* HttpClient.m */; };
+		9171FC291C56D58400C7C088 /* NSDate+BMWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FC281C56D58400C7C088 /* NSDate+BMWExtension.m */; };
+		9171FC301C56E44900C7C088 /* BMWLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FC2F1C56E44900C7C088 /* BMWLocationManager.m */; };
+		9171FC341C57D0CF00C7C088 /* BMWUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FC331C57D0CF00C7C088 /* BMWUtility.m */; };
+		9171FC371C57D1A800C7C088 /* NSError+BMWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FC361C57D1A800C7C088 /* NSError+BMWAdditions.m */; };
+		9171FC3A1C57EA4D00C7C088 /* BMWLocationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171FC391C57EA4D00C7C088 /* BMWLocationDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9171FBD01C566F1D00C7C088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9171FBAE1C566F1C00C7C088 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9171FBB51C566F1C00C7C088;
+			remoteInfo = BMWTask;
+		};
+		9171FBDB1C566F1D00C7C088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9171FBAE1C566F1C00C7C088 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9171FBB51C566F1C00C7C088;
+			remoteInfo = BMWTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91007A561C591C0900A38373 /* BMWLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWLocationService.h; sourceTree = "<group>"; };
+		91007A571C591C0A00A38373 /* BMWLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWLocationService.m; sourceTree = "<group>"; };
+		91007A591C5931FF00A38373 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		91007A831C59746E00A38373 /* BMWLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWLoadingView.h; sourceTree = "<group>"; };
+		91007A841C59746E00A38373 /* BMWLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWLoadingView.m; sourceTree = "<group>"; };
+		91007A861C59B30400A38373 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		91007A881C59C0D000A38373 /* BMWLocationViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWLocationViewControllerTests.m; sourceTree = "<group>"; };
+		91007A8B1C59C3D400A38373 /* locationResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locationResponse.json; sourceTree = "<group>"; };
+		9171FBB61C566F1C00C7C088 /* BMWTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMWTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9171FBBA1C566F1C00C7C088 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9171FBBC1C566F1C00C7C088 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9171FBBD1C566F1C00C7C088 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9171FBC31C566F1C00C7C088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9171FBC51C566F1C00C7C088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9171FBC81C566F1C00C7C088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9171FBCA1C566F1C00C7C088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9171FBCF1C566F1D00C7C088 /* BMWTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMWTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9171FBD51C566F1D00C7C088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9171FBDA1C566F1D00C7C088 /* BMWTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMWTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9171FBDE1C566F1D00C7C088 /* BMWTaskUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMWTaskUITests.m; sourceTree = "<group>"; };
+		9171FBE01C566F1D00C7C088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9171FBF01C56704900C7C088 /* BMWGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWGlobalConstants.h; sourceTree = "<group>"; };
+		9171FBF11C56704900C7C088 /* BMWGlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWGlobalConstants.m; sourceTree = "<group>"; };
+		9171FBF61C5670B500C7C088 /* BMWLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWLocation.h; sourceTree = "<group>"; };
+		9171FBF71C5670B500C7C088 /* BMWLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWLocation.m; sourceTree = "<group>"; };
+		9171FBF91C5670D600C7C088 /* BMWLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWLocationViewController.h; sourceTree = "<group>"; };
+		9171FBFA1C5670D600C7C088 /* BMWLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWLocationViewController.m; sourceTree = "<group>"; };
+		9171FBFD1C56712700C7C088 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		9171FBFE1C56712700C7C088 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		9171FC271C56D58400C7C088 /* NSDate+BMWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BMWExtension.h"; sourceTree = "<group>"; };
+		9171FC281C56D58400C7C088 /* NSDate+BMWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BMWExtension.m"; sourceTree = "<group>"; };
+		9171FC2E1C56E44900C7C088 /* BMWLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWLocationManager.h; sourceTree = "<group>"; };
+		9171FC2F1C56E44900C7C088 /* BMWLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWLocationManager.m; sourceTree = "<group>"; };
+		9171FC321C57D0CF00C7C088 /* BMWUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWUtility.h; sourceTree = "<group>"; };
+		9171FC331C57D0CF00C7C088 /* BMWUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWUtility.m; sourceTree = "<group>"; };
+		9171FC351C57D1A800C7C088 /* NSError+BMWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+BMWAdditions.h"; sourceTree = "<group>"; };
+		9171FC361C57D1A800C7C088 /* NSError+BMWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+BMWAdditions.m"; sourceTree = "<group>"; };
+		9171FC381C57EA4D00C7C088 /* BMWLocationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWLocationDetailViewController.h; sourceTree = "<group>"; };
+		9171FC391C57EA4D00C7C088 /* BMWLocationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWLocationDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9171FBB31C566F1C00C7C088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91007A871C59B30400A38373 /* CoreLocation.framework in Frameworks */,
+				91007A5A1C59320000A38373 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9171FBCC1C566F1D00C7C088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9171FBD71C566F1D00C7C088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91007A821C59724000A38373 /* UIWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				91007A831C59746E00A38373 /* BMWLoadingView.h */,
+				91007A841C59746E00A38373 /* BMWLoadingView.m */,
+			);
+			name = UIWidgets;
+			sourceTree = "<group>";
+		};
+		91007A8A1C59C3B700A38373 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				91007A8B1C59C3D400A38373 /* locationResponse.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		9171FBAD1C566F1B00C7C088 = {
+			isa = PBXGroup;
+			children = (
+				91007A861C59B30400A38373 /* CoreLocation.framework */,
+				91007A591C5931FF00A38373 /* MapKit.framework */,
+				9171FBB81C566F1C00C7C088 /* BMWTask */,
+				9171FBD21C566F1D00C7C088 /* BMWTaskTests */,
+				9171FBDD1C566F1D00C7C088 /* BMWTaskUITests */,
+				9171FBB71C566F1C00C7C088 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9171FBB71C566F1C00C7C088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9171FBB61C566F1C00C7C088 /* BMWTask.app */,
+				9171FBCF1C566F1D00C7C088 /* BMWTaskTests.xctest */,
+				9171FBDA1C566F1D00C7C088 /* BMWTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9171FBB81C566F1C00C7C088 /* BMWTask */ = {
+			isa = PBXGroup;
+			children = (
+				91007A821C59724000A38373 /* UIWidgets */,
+				9171FBFC1C56710400C7C088 /* API */,
+				9171FBEE1C566FB300C7C088 /* BMWHelper */,
+				9171FBED1C566FA400C7C088 /* Controller */,
+				9171FBEC1C566F9900C7C088 /* Model */,
+				9171FBBC1C566F1C00C7C088 /* AppDelegate.h */,
+				9171FBBD1C566F1C00C7C088 /* AppDelegate.m */,
+				9171FBC21C566F1C00C7C088 /* Main.storyboard */,
+				9171FBC51C566F1C00C7C088 /* Assets.xcassets */,
+				9171FBC71C566F1C00C7C088 /* LaunchScreen.storyboard */,
+				9171FBCA1C566F1C00C7C088 /* Info.plist */,
+				9171FBB91C566F1C00C7C088 /* Supporting Files */,
+			);
+			path = BMWTask;
+			sourceTree = "<group>";
+		};
+		9171FBB91C566F1C00C7C088 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9171FBBA1C566F1C00C7C088 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9171FBD21C566F1D00C7C088 /* BMWTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				91007A8A1C59C3B700A38373 /* JSON */,
+				9171FBD51C566F1D00C7C088 /* Info.plist */,
+				91007A881C59C0D000A38373 /* BMWLocationViewControllerTests.m */,
+			);
+			path = BMWTaskTests;
+			sourceTree = "<group>";
+		};
+		9171FBDD1C566F1D00C7C088 /* BMWTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9171FBDE1C566F1D00C7C088 /* BMWTaskUITests.m */,
+				9171FBE01C566F1D00C7C088 /* Info.plist */,
+			);
+			path = BMWTaskUITests;
+			sourceTree = "<group>";
+		};
+		9171FBEC1C566F9900C7C088 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9171FBF61C5670B500C7C088 /* BMWLocation.h */,
+				9171FBF71C5670B500C7C088 /* BMWLocation.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9171FBED1C566FA400C7C088 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9171FBF91C5670D600C7C088 /* BMWLocationViewController.h */,
+				9171FBFA1C5670D600C7C088 /* BMWLocationViewController.m */,
+				9171FC381C57EA4D00C7C088 /* BMWLocationDetailViewController.h */,
+				9171FC391C57EA4D00C7C088 /* BMWLocationDetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9171FBEE1C566FB300C7C088 /* BMWHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9171FC311C57D0B300C7C088 /* Utility */,
+				9171FC261C56D54900C7C088 /* Categories */,
+				9171FBF01C56704900C7C088 /* BMWGlobalConstants.h */,
+				9171FBF11C56704900C7C088 /* BMWGlobalConstants.m */,
+				91007A561C591C0900A38373 /* BMWLocationService.h */,
+				91007A571C591C0A00A38373 /* BMWLocationService.m */,
+			);
+			name = BMWHelper;
+			sourceTree = "<group>";
+		};
+		9171FBFC1C56710400C7C088 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9171FC2E1C56E44900C7C088 /* BMWLocationManager.h */,
+				9171FC2F1C56E44900C7C088 /* BMWLocationManager.m */,
+				9171FBFD1C56712700C7C088 /* HttpClient.h */,
+				9171FBFE1C56712700C7C088 /* HttpClient.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		9171FC261C56D54900C7C088 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9171FC271C56D58400C7C088 /* NSDate+BMWExtension.h */,
+				9171FC281C56D58400C7C088 /* NSDate+BMWExtension.m */,
+				9171FC351C57D1A800C7C088 /* NSError+BMWAdditions.h */,
+				9171FC361C57D1A800C7C088 /* NSError+BMWAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9171FC311C57D0B300C7C088 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9171FC321C57D0CF00C7C088 /* BMWUtility.h */,
+				9171FC331C57D0CF00C7C088 /* BMWUtility.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9171FBB51C566F1C00C7C088 /* BMWTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9171FBE31C566F1D00C7C088 /* Build configuration list for PBXNativeTarget "BMWTask" */;
+			buildPhases = (
+				9171FBB21C566F1C00C7C088 /* Sources */,
+				9171FBB31C566F1C00C7C088 /* Frameworks */,
+				9171FBB41C566F1C00C7C088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMWTask;
+			productName = BMWTask;
+			productReference = 9171FBB61C566F1C00C7C088 /* BMWTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9171FBCE1C566F1D00C7C088 /* BMWTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9171FBE61C566F1D00C7C088 /* Build configuration list for PBXNativeTarget "BMWTaskTests" */;
+			buildPhases = (
+				9171FBCB1C566F1D00C7C088 /* Sources */,
+				9171FBCC1C566F1D00C7C088 /* Frameworks */,
+				9171FBCD1C566F1D00C7C088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9171FBD11C566F1D00C7C088 /* PBXTargetDependency */,
+			);
+			name = BMWTaskTests;
+			productName = BMWTaskTests;
+			productReference = 9171FBCF1C566F1D00C7C088 /* BMWTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9171FBD91C566F1D00C7C088 /* BMWTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9171FBE91C566F1D00C7C088 /* Build configuration list for PBXNativeTarget "BMWTaskUITests" */;
+			buildPhases = (
+				9171FBD61C566F1D00C7C088 /* Sources */,
+				9171FBD71C566F1D00C7C088 /* Frameworks */,
+				9171FBD81C566F1D00C7C088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9171FBDC1C566F1D00C7C088 /* PBXTargetDependency */,
+			);
+			name = BMWTaskUITests;
+			productName = BMWTaskUITests;
+			productReference = 9171FBDA1C566F1D00C7C088 /* BMWTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9171FBAE1C566F1C00C7C088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Toheed Khan";
+				TargetAttributes = {
+					9171FBB51C566F1C00C7C088 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					9171FBCE1C566F1D00C7C088 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 9171FBB51C566F1C00C7C088;
+					};
+					9171FBD91C566F1D00C7C088 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 9171FBB51C566F1C00C7C088;
+					};
+				};
+			};
+			buildConfigurationList = 9171FBB11C566F1C00C7C088 /* Build configuration list for PBXProject "BMWTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9171FBAD1C566F1B00C7C088;
+			productRefGroup = 9171FBB71C566F1C00C7C088 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9171FBB51C566F1C00C7C088 /* BMWTask */,
+				9171FBCE1C566F1D00C7C088 /* BMWTaskTests */,
+				9171FBD91C566F1D00C7C088 /* BMWTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9171FBB41C566F1C00C7C088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9171FBC91C566F1C00C7C088 /* LaunchScreen.storyboard in Resources */,
+				9171FBC61C566F1C00C7C088 /* Assets.xcassets in Resources */,
+				9171FBC41C566F1C00C7C088 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9171FBCD1C566F1D00C7C088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91007A8D1C59C94E00A38373 /* locationResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9171FBD81C566F1D00C7C088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9171FBB21C566F1C00C7C088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9171FC3A1C57EA4D00C7C088 /* BMWLocationDetailViewController.m in Sources */,
+				9171FC371C57D1A800C7C088 /* NSError+BMWAdditions.m in Sources */,
+				91007A851C59746E00A38373 /* BMWLoadingView.m in Sources */,
+				9171FBBE1C566F1C00C7C088 /* AppDelegate.m in Sources */,
+				9171FC341C57D0CF00C7C088 /* BMWUtility.m in Sources */,
+				9171FC301C56E44900C7C088 /* BMWLocationManager.m in Sources */,
+				9171FBBB1C566F1C00C7C088 /* main.m in Sources */,
+				9171FBF81C5670B500C7C088 /* BMWLocation.m in Sources */,
+				9171FBFB1C5670D600C7C088 /* BMWLocationViewController.m in Sources */,
+				91007A581C591C0A00A38373 /* BMWLocationService.m in Sources */,
+				9171FC291C56D58400C7C088 /* NSDate+BMWExtension.m in Sources */,
+				9171FBFF1C56712700C7C088 /* HttpClient.m in Sources */,
+				9171FBF21C56704900C7C088 /* BMWGlobalConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9171FBCB1C566F1D00C7C088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91007A891C59C0D000A38373 /* BMWLocationViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9171FBD61C566F1D00C7C088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9171FBDF1C566F1D00C7C088 /* BMWTaskUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9171FBD11C566F1D00C7C088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9171FBB51C566F1C00C7C088 /* BMWTask */;
+			targetProxy = 9171FBD01C566F1D00C7C088 /* PBXContainerItemProxy */;
+		};
+		9171FBDC1C566F1D00C7C088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9171FBB51C566F1C00C7C088 /* BMWTask */;
+			targetProxy = 9171FBDB1C566F1D00C7C088 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9171FBC21C566F1C00C7C088 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9171FBC31C566F1C00C7C088 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9171FBC71C566F1C00C7C088 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9171FBC81C566F1C00C7C088 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9171FBE11C566F1D00C7C088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9171FBE21C566F1D00C7C088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9171FBE41C566F1D00C7C088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BMWTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9ledge.mission.BMWTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9171FBE51C566F1D00C7C088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BMWTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9ledge.mission.BMWTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9171FBE71C566F1D00C7C088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BMWTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9ledge.mission.BMWTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMWTask.app/BMWTask";
+			};
+			name = Debug;
+		};
+		9171FBE81C566F1D00C7C088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BMWTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9ledge.mission.BMWTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BMWTask.app/BMWTask";
+			};
+			name = Release;
+		};
+		9171FBEA1C566F1D00C7C088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BMWTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9ledge.mission.BMWTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BMWTask;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9171FBEB1C566F1D00C7C088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BMWTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9ledge.mission.BMWTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BMWTask;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9171FBB11C566F1C00C7C088 /* Build configuration list for PBXProject "BMWTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9171FBE11C566F1D00C7C088 /* Debug */,
+				9171FBE21C566F1D00C7C088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9171FBE31C566F1D00C7C088 /* Build configuration list for PBXNativeTarget "BMWTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9171FBE41C566F1D00C7C088 /* Debug */,
+				9171FBE51C566F1D00C7C088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9171FBE61C566F1D00C7C088 /* Build configuration list for PBXNativeTarget "BMWTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9171FBE71C566F1D00C7C088 /* Debug */,
+				9171FBE81C566F1D00C7C088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9171FBE91C566F1D00C7C088 /* Build configuration list for PBXNativeTarget "BMWTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9171FBEA1C566F1D00C7C088 /* Debug */,
+				9171FBEB1C566F1D00C7C088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9171FBAE1C566F1C00C7C088 /* Project object */;
+}
